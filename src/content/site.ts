@@ -15,8 +15,8 @@ export const site = {
   phone: "+91 99091 52535",
   phoneHref: "+919909152535",
   copyrightLine: "Built with persistence, not a degree.",
-  linkedin: "#",
-  github: "#",
+  linkedin: "https://www.linkedin.com/in/bharatparmar-dev",
+  github: "https://github.com/bharatparmar-dev",
 
 };
 
