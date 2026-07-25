@@ -40,8 +40,8 @@ export default function Navbar() {
         </ul>
 
         <a
-          href="/resume.pdf"
-          download="Bharat_Parmar_Resume.pdf"
+          href="/Bharat_Parmar_Resume.pdf"
+          download
           className="hidden rounded-sm border border-brass px-4 py-2 font-mono text-xs uppercase tracking-wide text-brass hover:bg-brass-soft md:inline-block"
         >
           Download Resume
@@ -90,8 +90,8 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href="/resume.pdf"
-              download="Bharat_Parmar_Resume.pdf"
+              href="/Bharat_Parmar_Resume.pdf"
+              download
               onClick={() => setOpen(false)}
               className="mt-2 inline-block rounded-sm border border-brass px-4 py-2 font-mono text-xs uppercase tracking-wide text-brass"
             >
