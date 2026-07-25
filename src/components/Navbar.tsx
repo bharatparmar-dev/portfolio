@@ -39,12 +39,13 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <NavLink
-          href="/contact"
+        <a
+          href="/resume.pdf"
+          download="Bharat_Parmar_Resume.pdf"
           className="hidden rounded-sm border border-brass px-4 py-2 font-mono text-xs uppercase tracking-wide text-brass hover:bg-brass-soft md:inline-block"
         >
-          Get In Touch
-        </NavLink>
+          Download Resume
+        </a>
 
         {/* Hamburger button — hidden above md breakpoint */}
         <button
@@ -88,13 +89,14 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <Link
-              href="/contact"
+            <a
+              href="/resume.pdf"
+              download="Bharat_Parmar_Resume.pdf"
               onClick={() => setOpen(false)}
               className="mt-2 inline-block rounded-sm border border-brass px-4 py-2 font-mono text-xs uppercase tracking-wide text-brass"
             >
-              Get In Touch
-            </Link>
+              Download Resume
+            </a>
           </li>
         </ul>
       )}
