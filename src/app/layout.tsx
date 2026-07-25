@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Analytics from "@/components/Analytics";
 import RouteFocusReset from "@/components/RouteFocusReset";
+import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -51,6 +52,7 @@ export default function RootLayout({
         <main id="main" className="min-w-0 flex-1">{children}</main>
         <Footer />
         <Analytics />
+        <VercelAnalytics />
       </body>
     </html>
   );
