@@ -1,12 +1,7 @@
 import CornerTicks from "@/components/CornerTicks";
+import { about } from "@/content/site";
 
-const steps = [
-  { label: "Excel Formulas", note: "Rough estimate sheets, done by hand" },
-  { label: "VBA + Macros", note: "First automation, first buttons" },
-  { label: "C# / WinForms", note: "First real desktop application" },
-  { label: "SQL Server", note: "First real database" },
-  { label: "Full Applications", note: "JewelX, drivers, and beyond" },
-];
+const steps = about.journey;
 
 export default function JourneyDiagram() {
   return (

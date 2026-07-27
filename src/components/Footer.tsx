@@ -1,4 +1,4 @@
-import { site, navLinks } from "@/content/site";
+import { site, navLinks, footer } from "@/content/site";
 import NavLink from "@/components/NavLink";
 
 const footerLinks = [...navLinks, { href: "/privacy", label: "Privacy Policy" }];
@@ -20,7 +20,7 @@ export default function Footer() {
           {/* Column 2: Quick Links */}
           <div>
             <p className="font-mono text-xs uppercase tracking-wide text-brass">
-              Quick Links
+              {footer.quickLinksLabel}
             </p>
             <ul className="mt-3 flex flex-col gap-2">
               {footerLinks.map((link) => (
@@ -39,7 +39,7 @@ export default function Footer() {
           {/* Column 3: Get In Touch */}
           <div>
             <p className="font-mono text-xs uppercase tracking-wide text-brass">
-              Get In Touch
+              {footer.contactLabel}
             </p>
 
             <ul className="mt-3 flex flex-col gap-2 text-sm text-muted">

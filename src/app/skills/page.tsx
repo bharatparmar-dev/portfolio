@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { skills } from "@/content/site";
 import CtaBand from "@/components/CtaBand";
 import PageHeader from "@/components/PageHeader";
+import CornerTicks from "@/components/CornerTicks";
 
 export const metadata: Metadata = {
-  title: "Skills",
-  description:
-    "Not a checklist of tools. How I actually approach a new problem and learn what it needs.",
+  title: skills.meta.title,
+  description: skills.meta.description,
 };
 
 export default function SkillsPage() {
@@ -24,8 +24,9 @@ export default function SkillsPage() {
             ))}
           </div>
 
-          <div className="mt-14 rounded-sm border border-line bg-surface p-8">
-            <p className="font-mono text-xs uppercase tracking-widest text-brass mb-3">Tools & Technologies</p>
+          <div className="relative mt-14 rounded-sm border border-line bg-surface p-8 transition-colors pointer-fine:hover:border-brass">
+            <CornerTicks />
+            <p className="font-mono text-xs uppercase tracking-widest text-brass mb-3">{skills.toolsLabel}</p>
             <h2 className="font-display text-lg font-semibold">{skills.tools.heading}</h2>
             <p className="mt-3 text-muted">{skills.tools.body}</p>
           </div>

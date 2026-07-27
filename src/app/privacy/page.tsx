@@ -3,8 +3,8 @@ import { privacy } from "@/content/site";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description: "What information this site collects, and how it's used.",
+  title: privacy.meta.title,
+  description: privacy.meta.description,
 };
 
 export default function PrivacyPage() {

@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { site } from "@/content/site";
 
 const routes = [
   "",
@@ -11,7 +12,7 @@ const routes = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://bharatparmar.dev";
+  const base = site.domain;
   return routes.map((route) => ({
     url: `${base}${route}`,
     lastModified: new Date(),

@@ -5,9 +5,8 @@ import PageHeader from "@/components/PageHeader";
 import CornerTicks from "@/components/CornerTicks";
 
 export const metadata: Metadata = {
-  title: "Projects",
-  description:
-    "Six real projects, including the site you're looking at — each one built to solve a problem, not to check a box.",
+  title: projects.meta.title,
+  description: projects.meta.description,
 };
 
 function Label({ children }: { children: string }) {
@@ -48,15 +47,15 @@ export default function ProjectsPage() {
             <h2 className="mt-2 font-display text-2xl font-semibold">{projects.featured.title}</h2>
 
             <div className="mt-5">
-              <Label>The Problem</Label>
+              <Label>{projects.labels.problem}</Label>
               <p className="mt-1 text-paper">{projects.featured.problem}</p>
             </div>
             <div className="mt-4">
-              <Label>What I Did</Label>
+              <Label>{projects.labels.what}</Label>
               <p className="mt-1 text-paper">{projects.featured.what}</p>
             </div>
             <div className="mt-4">
-              <Label>The Outcome</Label>
+              <Label>{projects.labels.outcome}</Label>
               <p className="mt-1 text-paper">{projects.featured.outcome}</p>
             </div>
 
@@ -77,21 +76,21 @@ export default function ProjectsPage() {
                 <h2 className="mt-2 font-display text-xl font-semibold">{project.title}</h2>
 
                 <div className="mt-5">
-                  <Label>The Problem</Label>
+                  <Label>{projects.labels.problem}</Label>
                   <p className="mt-1 text-paper">{project.problem}</p>
                 </div>
                 {"context" in project && (
                   <div className="mt-4">
-                    <Label>Context</Label>
+                    <Label>{projects.labels.context}</Label>
                     <p className="mt-1 text-paper">{project.context}</p>
                   </div>
                 )}
                 <div className="mt-4">
-                  <Label>What I Did</Label>
+                  <Label>{projects.labels.what}</Label>
                   <p className="mt-1 text-paper">{project.what}</p>
                 </div>
                 <div className="mt-4">
-                  <Label>The Outcome</Label>
+                  <Label>{projects.labels.outcome}</Label>
                   <p className="mt-1 text-paper">{project.outcome}</p>
                 </div>
 

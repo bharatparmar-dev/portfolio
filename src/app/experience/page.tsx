@@ -4,9 +4,8 @@ import CtaBand from "@/components/CtaBand";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Experience",
-  description:
-    "Years of computer-based work across five roles, from a travel agency at sixteen to running the technical backbone of a jewellery business today.",
+  title: experience.meta.title,
+  description: experience.meta.description,
 };
 
 export default function ExperiencePage() {

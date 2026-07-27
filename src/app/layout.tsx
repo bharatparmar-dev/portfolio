@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Analytics from "@/components/Analytics";
 import RouteFocusReset from "@/components/RouteFocusReset";
+import { site } from "@/content/site";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -24,12 +25,12 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.domain),
   title: {
-    default: "Bharat Parmar | Self-Taught Software Developer",
-    template: "%s | Bharat Parmar",
+    default: `${site.name} | ${site.role}`,
+    template: `%s | ${site.name}`,
   },
-  description:
-    "Self-taught software developer with years of hands-on, computer-based business operations experience.",
+  description: site.metaDescription,
 };
 
 export default function RootLayout({

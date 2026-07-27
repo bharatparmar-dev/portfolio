@@ -7,6 +7,13 @@ export const navLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
+export const resumeLabel = "Download Resume";
+
+export const footer = {
+  quickLinksLabel: "Quick Links",
+  contactLabel: "Get In Touch",
+};
+
 export const site = {
   name: "Bharat Parmar",
   role: "Self-Taught Software Developer",
@@ -17,11 +24,13 @@ export const site = {
   copyrightLine: "Built with persistence, not a degree.",
   linkedin: "https://www.linkedin.com/in/bharatparmar-dev",
   github: "https://github.com/bharatparmar-dev",
-
+  domain: "https://bharatparmar.vercel.app",
+  metaDescription: "Self-taught software developer with years of hands-on, computer-based business operations experience."
 };
 
 export const home = {
   hero: {
+    eyebrow: "Bharat Parmar — Self-Taught Developer",
     headline: "You're looking at my strongest project right now.",
     subheadline:
       "I built this entire site by hand — self-taught, no computer science degree, the same way I've solved every real problem I've taken on.",
@@ -82,6 +91,11 @@ export const home = {
 };
 
 export const about = {
+  meta:  {
+    title: "About",
+    description:
+      "I didn't take the usual road into software. Here's the one I actually took.",
+  },
   header: {
     eyebrow: "About Me",
     title:
@@ -110,6 +124,16 @@ export const about = {
       "That's how I approach anything I don't already know how to do: work through it, build something that actually works, then take it further when it counts.",
     ],
   },
+  journey: [
+    { label: "Excel Formulas", note: "Rough estimate sheets, done by hand" },
+    { label: "VBA + Macros", note: "First automation, first buttons" },
+    { label: "C# / WinForms", note: "First real desktop application" },
+    { label: "SQL Server", note: "First real database" },
+    { label: "Full Applications", note: "JewelX, drivers, and beyond" },
+  ],
+
+  journeyLabel: "The Path So Far",
+
   cta: {
     heading: "Here's What That Persistence Has Actually Built",
     ctaLabel: "View My Projects",
@@ -118,9 +142,20 @@ export const about = {
 };
 
 export const projects = {
+  meta: {
+    title: "Projects",
+    description:
+      "Six real projects, including the site you're looking at — each one built to solve a problem, not to check a box.",
+  },
   header: {
     eyebrow: "Projects",
     title: "Not a list of technologies. A record of problems I worked through, one at a time.",
+  },
+  labels: {
+    problem: "The Problem",
+    context: "Context",
+    what: "What I Did",
+    outcome: "The Outcome",
   },
   featured: {
     tag: "Featured",
@@ -203,6 +238,11 @@ export const projects = {
 };
 
 export const skills = {
+  meta: {
+    title: "Skills",
+    description:
+      "Not a checklist of tools. How I actually approach a new problem and learn what it needs.",
+  },
   header: {
     eyebrow: "Skills",
     title: "I could hand you a list of tools. Instead, here's how I actually think.",
@@ -229,6 +269,9 @@ export const skills = {
     heading: "What I'm Comfortable Working With",
     body: "C#, SQL Server, and VBA/Excel automation are the tools I return to most. But my real skill isn't a fixed list — it's picking up whatever a project actually needs, as I've done project after project, and I'll do the same for whatever a role requires next.",
   },
+
+  toolsLabel: "Tools & Technologies",
+  
   cta: {
     heading: "Here's Where I've Actually Applied All of This",
     ctaLabel: "View My Experience",
@@ -237,6 +280,11 @@ export const skills = {
 };
 
 export const experience = {
+  meta: {
+    title: "Experience",
+    description:
+      "Years of computer-based work across five roles, from a travel agency at sixteen to running the technical backbone of a jewellery business today.",
+  },
   header: {
     eyebrow: "Experience",
     title: "Years of computer-based work. None of it inside an IT department. All of it relevant.",
@@ -281,10 +329,22 @@ export const experience = {
 };
 
 export const contact = {
+  meta: {
+    title: "Contact",
+    description:
+      "I'm actively looking for my first professional software development role. Get in touch.",
+  },
   header: {
     eyebrow: "Contact",
     title:
       "I'm actively looking for my first professional software development role — open to relocating, especially to Ahmedabad.",
+  },
+  labels: {
+    email: "Email",
+    phone: "Phone",
+    whatsapp: "WhatsApp",
+    linkedin: "LinkedIn",
+    github: "GitHub",
   },
   form: {
     heading: "Send Me a Message",
@@ -299,6 +359,10 @@ export const contact = {
 };
 
 export const privacy = {
+  meta: {
+    title: "Privacy Policy",
+    description: "What information this site collects, and how it's used.",
+  },
   title: "Privacy Policy",
   lastUpdated: "July 2026",
   sections: [
@@ -316,7 +380,7 @@ export const privacy = {
     },
     {
       heading: "Questions",
-      body: `If you have questions about your data or want it removed, email me directly at ${"bharatparmar.dev@gmail.com"}.`,
+      body: `If you have questions about your data or want it removed, email me directly.`,
     },
   ],
 };

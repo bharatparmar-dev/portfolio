@@ -5,9 +5,8 @@ import PageHeader from "@/components/PageHeader";
 import JourneyDiagram from "@/components/JourneyDiagram";
 
 export const metadata: Metadata = {
-  title: "About",
-  description:
-    "I didn't take the usual road into software. Here's the one I actually took.",
+  title: about.meta.title,
+  description: about.meta.description,
 };
 
 function ProseSection({
@@ -45,7 +44,7 @@ export default function AboutPage() {
           />
           <div className="mt-14">
             <p className="mb-4 font-mono text-xs uppercase tracking-widest text-brass">
-              The Path So Far
+              {about.journeyLabel}
             </p>
             <JourneyDiagram />
           </div>

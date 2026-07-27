@@ -1,9 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { navLinks, site } from "@/content/site";
+import { navLinks, site, resumeLabel } from "@/content/site";
 import NavLink from "@/components/NavLink";
 
 export default function Navbar() {
@@ -16,7 +15,7 @@ export default function Navbar() {
         <NavLink
           href="/"
           onNavigate={() => setOpen(false)}
-          className="font-display text-lg font-semibold"
+          className="font-display text-lg font-semibold text-paper transition-colors pointer-fine:hover:text-brass"
         >
           {site.name}
         </NavLink>
@@ -44,7 +43,7 @@ export default function Navbar() {
           download
           className="hidden rounded-sm border border-brass px-4 py-2 font-mono text-xs uppercase tracking-wide text-brass hover:bg-brass-soft md:inline-block"
         >
-          Download Resume
+          {resumeLabel}
         </a>
 
         {/* Hamburger button — hidden above md breakpoint */}
@@ -95,7 +94,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className="mt-2 inline-block rounded-sm border border-brass px-4 py-2 font-mono text-xs uppercase tracking-wide text-brass"
             >
-              Download Resume
+              {resumeLabel}
             </a>
           </li>
         </ul>
