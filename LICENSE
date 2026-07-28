@@ -22,7 +22,9 @@ SOFTWARE.
 
 ---
 
-Note: This license covers the code and project structure only. It does not
-cover the personal content in `src/content/site.ts` (bio, project
-descriptions, resume text, and other portfolio copy), which belongs to
-Bharat Parmar and is not licensed for reuse.
+NOTE ON SCOPE:
+This license applies to the source code and project structure only.
+It does NOT extend to the personal content contained in `src/content/site.ts`
+(including but not limited to name, biography, project descriptions, work
+history, and resume content), which remains the personal property of
+Bharat Parmar and is not licensed for reuse or redistribution.

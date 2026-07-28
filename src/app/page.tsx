@@ -7,14 +7,9 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden px-6 py-24 sm:py-32">
-        <div className="absolute inset-0 blueprint-grid" aria-hidden="true" />
-        <div
-          className="absolute -top-1/3 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full hero-glow"
-          aria-hidden="true"
-        />
+      <section className="relative px-6 py-24 sm:py-32">
         <CornerTicks />
-        <div className="relative z-10 mx-auto max-w-4xl">
+        <div className="mx-auto max-w-4xl">
         <p className="mb-6 font-mono text-xs uppercase tracking-widest text-brass">
           {home.hero.eyebrow}
         </p>

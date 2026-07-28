@@ -70,23 +70,3 @@ textarea:focus-visible {
 .skip-link:focus {
   left: 0;
 }
-
-/* Subtle blueprint grid, used behind the hero */
-.blueprint-grid {
-  background-image:
-    linear-gradient(var(--color-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--color-line) 1px, transparent 1px);
-  background-size: 48px 48px;
-  opacity: 0.35;
-}
-
-@keyframes drift-glow {
-  0%, 100% { transform: translate(-10%, -10%) scale(1); }
-  50% { transform: translate(10%, 10%) scale(1.15); }
-}
-.hero-glow {
-  background: radial-gradient(circle, var(--color-brass) 0%, transparent 70%);
-  opacity: 0.08;
-  filter: blur(60px);
-  animation: drift-glow 18s ease-in-out infinite;
-}
